@@ -1,0 +1,130 @@
+.container {
+	place-self: center;
+	padding: 40px;
+	border-radius: 10px;
+	backdrop-filter: blur(20px);
+	background-color: hsla(187, 96%, 69%, 0.2);
+	/* background-color: hsla(194, 96%, 69%, 0.2); */
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4%;
+}
+
+.search-bar {
+	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 40px;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px 30px;
+	border: none;
+	outline: none;
+	transition: all 0.2s ease-in;
+	border-radius: 40px;
+}
+
+.input-field:focus {
+	padding: 10px 30px;
+}
+
+.input-field:focus::placeholder {
+	transition: transform 0.2s ease-in, font-size 0.2s ease-in, 0.2s ease-in;
+	transform: translateY(-10px);
+	font-size: 12px;
+	padding-left: 10px;
+	color: #999;
+}
+
+.input-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	background-color: #999;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+}
+
+.input-btn:hover {
+	background-color: #0062cc;
+}
+
+.input-btn:active {
+	background-color: #00509d;
+	transform: scale(0.8);
+	transition: transform 0.1s ease-in;
+}
+
+.initial-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.weather-icon {
+	width: 150px;
+	margin: 30px 0;
+}
+
+.temp {
+	color: #fff;
+	font-size: 62px;
+	line-height: 2;
+	align-self: center;
+}
+
+.feelsTemp {
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	/* line-height: 0; */
+	align-self: center;
+}
+
+.weather-description {
+	color: #fff;
+	font-size: 22px;
+	line-height: 1;
+	align-self: center;
+}
+
+.weather-data {
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.city {
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	line-height: 3;
+	align-content: center;
+}
+
+.weather-data .info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weather-data .info span {
+	/* display: block; */
+	font-size: 16px;
+	align-items: center;
+}
+
+.weather-data .info img {
+	width: 26px;
+	margin-top: 10px;
+}
